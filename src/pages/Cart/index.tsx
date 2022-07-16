@@ -64,7 +64,6 @@ const Cart = (): JSX.Element => {
                 <img src={product.image} alt={product.title} />
               </td>
               <td>
-                <span>{product.id}</span>
                 <strong>{product.title}</strong>
                 <span>{product.priceFormatted}</span>
               </td>
@@ -100,7 +99,7 @@ const Cart = (): JSX.Element => {
                 <button
                   type="button"
                   data-testid="remove-product"
-                onClick={() => handleRemoveProduct(product.id)}
+                  onClick={() => handleRemoveProduct(product.id)}
                 >
                   <MdDelete size={20} />
                 </button>

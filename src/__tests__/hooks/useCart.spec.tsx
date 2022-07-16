@@ -284,10 +284,10 @@ describe('useCart Hook', () => {
       result.current.removeProduct(productId);
     });
 
-    expect(mockedToastError).toHaveBeenCalledWith('Erro na remoção do produto');
+    expect(mockedToastError).toHaveBeenCalledWith('Erro na remoção do produto'); 
     expect(result.current.cart).toEqual(
       expect.arrayContaining(initialStoragedData)
-    );
+    ); 
     expect(mockedSetItemLocalStorage).not.toHaveBeenCalled();
   });
 
